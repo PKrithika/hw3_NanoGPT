@@ -1,0 +1,26 @@
+[project]
+name = "nanogpt"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "PKrithika", email = "krithikapabbathi@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "datasets>=5.0.1",
+    "numpy>=2.5.2",
+    "requests>=2.34.2",
+    "tiktoken>=0.14.0",
+    "torch>=2.13.0",
+    "tqdm>=4.70.0",
+    "transformers>=5.15.1",
+    "wandb>=0.28.2",
+]
+
+[project.scripts]
+nanogpt = "nanogpt:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
